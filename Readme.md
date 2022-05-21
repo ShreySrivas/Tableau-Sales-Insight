@@ -4,7 +4,8 @@ Open data dump on SQL workbench and perform mentioned queries:
 
   Show all customer records
 
-  SELECT * FROM customers;
+  SELECT count(*) FROM sales.customers;
+
 
   Show total number of customers
 
