@@ -1,33 +1,8 @@
-Data Analysis of Sales Insight
+# Data Analysis of AliqLab's Sales Insight 
 
-Open data dump on SQL workbench and perform mentioned queries:
-
-  Show all customer records
-
-  SELECT count(*) FROM sales.customers;
-
-
-  Show total number of customers
-
-  SELECT count(*) FROM customers;
-
-  Show transactions for Chennai market (market code for chennai is Mark001
-
-  SELECT * FROM transactions where market_code='Mark001';
-
-  Show distrinct product codes that were sold in chennai
-
-  SELECT distinct product_code FROM transactions where market_code='Mark001';
-
-  Show transactions where currency is US dollars
-
-  SELECT * from transactions where currency="USD"
-
-  Show transactions in 2020 join by date table
-
-  SELECT transactions.*, date.* FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020;
-
-  Show total revenue in year 2020,
-
-  SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and transactions.currency="INR\r" or transactions.currency="USD\r";
-
+Revenue Analysis:
+![image](https://user-images.githubusercontent.com/65944826/169655747-9740acf5-591b-4aee-9f52-be58037af341.png)    
+<br>
+Profit Analysis:
+<br>
+![image](https://user-images.githubusercontent.com/65944826/169655704-2dde7d7e-7c4c-43b4-be6c-cb660bf14723.png)
